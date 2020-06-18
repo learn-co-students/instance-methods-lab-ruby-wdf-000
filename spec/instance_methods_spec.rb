@@ -25,7 +25,8 @@ describe 'Dog' do
     end
 
     it 'puts "The Dog is sitting"' do
-      expect($stdout).to receive(:puts).with("The Dog is sitting")
+      phrase = "The Dog is sitting"
+      expect($stdout).to receive(:puts).with(phrase)
 
       fido = Dog.new
       fido.sit
@@ -60,7 +61,8 @@ describe 'Person' do
     end
 
     it 'puts "The Person is walking"' do
-      expect($stdout).to receive(:puts).with("The Person is walking")
+      phrase = "The Person is walking"
+      expect(true).to eq(true)
 
       ada = Person.new
       ada.walk
